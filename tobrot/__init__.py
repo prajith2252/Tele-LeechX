@@ -142,7 +142,7 @@ SPEEDTEST = os.environ.get("SPEEDTEST", "speedtest")
 TSEARCH_COMMAND = os.environ.get("TSEARCH_COMMAND", "tshelp")
 MEDIAINFO_CMD = os.environ.get("MEDIAINFO_CMD", "mediainfo")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "@FuZionX")
-CAP_STYLE = os.environ.get("CAP_STYLE", "code")
+CAP_STYLE = os.environ.get("CAP_STYLE", "b")
 BOT_NO = os.environ.get("BOT_NO", "")
 
 #Bot Command [Token Utils]  >>>>>>>>>>>
