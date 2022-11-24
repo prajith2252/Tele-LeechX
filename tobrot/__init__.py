@@ -124,7 +124,7 @@ GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
 STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
 SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumb")
 CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumb")
-UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False")
+UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "True")
 PYTDL_COMMAND = os.environ.get("PYTDL_COMMAND", "pytdl")
 GPYTDL_COMMAND = os.environ.get("GPYTDL_COMMAND", "gpytdl")
 LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
@@ -183,7 +183,7 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 LEECH_LOG = os.environ.get("LEECH_LOG", "")
 EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG", "")
 EXCEP_CHATS = os.environ.get("EXCEP_CHATS", "")
-BOT_PM = os.environ.get("BOT_PM", "false")
+BOT_PM = os.environ.get("BOT_PM", "False")
 SERVER_HOST = os.environ.get("SERVER_HOST", "")
 
 # 4 GB Upload Utils >>>>>>>>>>>
