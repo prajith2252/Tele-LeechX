@@ -12,7 +12,7 @@ import json
 import math
 import re
 import urllib.parse
-import lk21
+
 import requests
 import cfscrape
 import cloudscraper
@@ -24,7 +24,7 @@ from random import choice
 from urllib.parse import urlparse, unquote, parse_qs
 from lxml import etree
 from js2py import EvalJs
-from lk21.extractors.bypasser import Bypass
+
 from bs4 import BeautifulSoup
 from base64 import standard_b64encode
 
@@ -294,60 +294,6 @@ def onedrive(link: str) -> str:
     resp2 = requests.head(dl_link)
     return dl_link
 
-def hxfile(url: str) -> str:
-    """ Hxfile direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_filesIm(url)
-    return dl_url
-
-def anonfiles(url: str) -> str:
-    """ Anonfiles direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_anonfiles(url)
-    return dl_url
-
-
-def letsupload(url: str) -> str:
-    """ Letsupload direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    dl_url = ''
-    try:
-        link = re.findall(r'\bhttps?://.*letsupload\.io\S+', url)[0]
-    except IndexError:
-        raise DirectDownloadLinkException("No Letsupload links found\n")
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_url(link)
-    return dl_url
-
-def fembed(link: str) -> str:
-    """ Fembed direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_fembed(link)
-    lst_link = []
-    count = len(dl_url)
-    for i in dl_url:
-        lst_link.append(dl_url[i])
-    return lst_link[count-1]
-
-
-def sbembed(link: str) -> str:
-    """ Sbembed direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_sbembed(link)
-    lst_link = []
-    count = len(dl_url)
-    for i in dl_url:
-        lst_link.append(dl_url[i])
-    return lst_link[count-1]
 
 def pixeldrain(url: str) -> str:
     """ Based on https://github.com/yash-dk/TorToolkit-Telegram """
@@ -361,23 +307,6 @@ def pixeldrain(url: str) -> str:
     else:
         raise DirectDownloadLinkException("ERROR: Cant't download due {}.".format(resp.text["value"]))
 
-
-def antfiles(url: str) -> str:
-    """ Antfiles direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_antfiles(url)
-    return dl_url
-
-
-def streamtape(url: str) -> str:
-    """ Streamtape direct link generator
-    Based on https://github.com/zevtyardt/lk21
-             https://github.com/SlamDevs/slam-mirrorbot """
-    bypasser = lk21.Bypass()
-    dl_url=bypasser.bypass_streamtape(url)
-    return dl_url
 
 
 def racaty(url: str) -> str:
