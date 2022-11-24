@@ -184,7 +184,7 @@ LEECH_LOG = os.environ.get("LEECH_LOG", "-1001515199923")
 EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG", "")
 EXCEP_CHATS = os.environ.get("EXCEP_CHATS", "")
 BOT_PM = os.environ.get("BOT_PM", "")
-SERVER_HOST = os.environ.get("SERVER_HOST", "")
+SERVER_HOST = os.environ.get("SERVER_HOST", "Jack")
 
 # 4 GB Upload Utils >>>>>>>>>>>
 PRM_USERS = os.environ.get("PRM_USERS", "617075060")
