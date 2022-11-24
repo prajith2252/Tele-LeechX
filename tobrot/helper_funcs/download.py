@@ -39,9 +39,7 @@ async def down_load_media_f(client, message):  # to be removed
                 )
         await upload_to_gdrive(the_real_download_location_g, mess_age, message, user_id)
     else:
-        await mess_age.edit_text(
-            "Reply to a Telegram Media, to upload to the Cloud Drive."
-        )
+        await mess_age.edit_text("Reply to a Telegram Media, to upload to the Cloud Drive.")
 
 
 async def download_tg(client, message):
