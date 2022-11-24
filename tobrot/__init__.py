@@ -180,14 +180,14 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 ⚡️✅ 𝑪𝒍𝒊𝒄𝒌 𝑫𝒐𝒘𝒏 𝒂𝒏𝒅 𝑺𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝑩𝒐𝒕 𝒕𝒐 𝑮𝒆𝒕 𝒕𝒉𝒆 𝑭𝒊𝒍𝒆 ✅ !! ⬇️ ⬇️""")
 
 #Bot Command [Bot PM & Log Channel]  >>>>>>>>>>>
-LEECH_LOG = os.environ.get("LEECH_LOG", "-1001515199923")
+LEECH_LOG = os.environ.get("LEECH_LOG", "")
 EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG", "")
 EXCEP_CHATS = os.environ.get("EXCEP_CHATS", "")
-BOT_PM = os.environ.get("BOT_PM", "False")
+BOT_PM = os.environ.get("BOT_PM", "")
 SERVER_HOST = os.environ.get("SERVER_HOST", "")
 
 # 4 GB Upload Utils >>>>>>>>>>>
-PRM_USERS = os.environ.get("PRM_USERS", "-1001515199923")
+PRM_USERS = os.environ.get("PRM_USERS", "617075060")
 PRM_LOG = os.environ.get("PRM_LOG", "-1001515199923")
 
 BOT_START_TIME = time.time()
