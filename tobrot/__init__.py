@@ -181,8 +181,8 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 
 #Bot Command [Bot PM & Log Channel]  >>>>>>>>>>>
 LEECH_LOG = os.environ.get("LEECH_LOG", "-1001515199923")
-EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG", "")
-EXCEP_CHATS = os.environ.get("EXCEP_CHATS", "")
+EX_LEECH_LOG = os.environ.get("EX_LEECH_LOG", "-1001515199923")
+EXCEP_CHATS = os.environ.get("EXCEP_CHATS", "-1001515199923")
 BOT_PM = os.environ.get("BOT_PM", "")
 SERVER_HOST = os.environ.get("SERVER_HOST", "Jack")
 
