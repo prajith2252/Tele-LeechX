@@ -187,7 +187,7 @@ BOT_PM = os.environ.get("BOT_PM", "")
 SERVER_HOST = os.environ.get("SERVER_HOST", "Jack")
 
 # 4 GB Upload Utils >>>>>>>>>>>
-PRM_USERS = os.environ.get("PRM_USERS", "617075060 1989205879 5223463598 1117228667")
+PRM_USERS = os.environ.get("PRM_USERS", "617075060 1989205879 5223463598 1117228667 5673274527")
 PRM_LOG = os.environ.get("PRM_LOG", "-1001501776333")
 
 BOT_START_TIME = time.time()
